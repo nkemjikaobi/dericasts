@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background-color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+} 
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 4rem;
+}
+.card-bg{
+  width: 500px;
+  margin: auto;
+}
+.card-bg .flex {
+  flex-direction: column;
+}
+.card-bg .flex .card-item{
+  align-self: flex-start;
+}
+.card-bg .flex > *:first-child {
+  color: gray;
+  font-size: 1rem;
+}
+.card-bg .flex > *:nth-child(2) {
+  color: rgb(201, 200, 200);
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-3{
+  grid-template-columns: repeat(3, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
