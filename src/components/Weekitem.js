@@ -4,14 +4,15 @@ import PropTypes from 'prop-types'
 
 const Weekitem = ({ week: { day, high, low, icon} }) => {
     return (
-        <div class='week'>
-            <div class='container'>
-                <div class='card flex'>
-                    <h5 class='week-item'>{day}</h5>
-                    <p class='week-item'>{high}&#176;</p>
-                    <p class='week-item'>{low}&#176;</p>
-                    <img src={icon} alt='icon' width='200px' height='200px'></img>
-                </div>
+        <div className='week'>
+            <div className='container'>
+                <a href='#!'>
+                    <div className='card grid grid-3'>
+                        <span className='week-item'>{day}</span>
+                        <span className='week-item'>{high}&#176; <span style={color}>{low}&#176;</span></span>
+                        <img src={icon} alt='icon' width='1px' height='80px'></img>
+                    </div>
+                </a>
             </div>
         </div>
     )
@@ -19,6 +20,10 @@ const Weekitem = ({ week: { day, high, low, icon} }) => {
 
 Weekitem.propTypes = {
     week: PropTypes.object.isRequired,
+}
+
+const color = {
+    color: 'rgb(201, 200, 200)'
 }
 
 export default Weekitem

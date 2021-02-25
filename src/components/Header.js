@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Header = ({ title }) => {
     return (
         <div id='header'>
-            <div className="container flex">
+            <div className="container">
                 <h1>{title}</h1>
             </div>
         </div>

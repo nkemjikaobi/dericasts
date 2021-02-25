@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import WeekItem from './Weekitem'
 import rain from '../images/rain-icon.png';
-//import cloudy from '../images/cloudy-icon.jpg';
+import cloudy from '../images/cloudy-icon.png';
 import sunny from '../images/sunny-icon.png';
 import snowy from '../images/snowy-icon.jpg';
 
@@ -26,7 +26,7 @@ const Weeks = () => {
             day: 'Wednesday',
             high: 30,
             low: 12,
-            icon: sunny
+            icon: cloudy
         },
         {
             id: 4,
@@ -51,9 +51,9 @@ const Weeks = () => {
         }// eslint-disable-next-line 
     ])
     return (
-        <div class='weeks container'>
+        <div className='weeks container'>
             <h3>This Week</h3>
-            <div class='grid'>
+            <div className='grid'>
                 { weeks.map((week) => <WeekItem key={week.id} week={week} /> )}
             </div>
         </div>
