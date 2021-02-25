@@ -38,6 +38,9 @@ body{
   padding: 20px;
   margin: 10px;
 }
+img {
+  width: 100%;
+}
 h1 {
   text-align: center;
   margin: 2rem 0;
@@ -65,4 +68,28 @@ h1 {
 .grid-3{
   grid-template-columns: repeat(3, 1fr);
 }
-
+.weeks {
+  margin: 6rem auto;
+}
+.weeks h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+.week .flex >*:first-child {
+  color: #fff;
+  margin-right: 2rem;
+}
+.week .flex >*:nth-child(2){
+  color: #fff;
+  margin-right: 0.3rem;
+}
+.week .flex >*:nth-child(3){
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: rgb(201, 200, 200);
+  margin-right: 2rem;
+}
+.week-item {
+  font-weight: bold;
+  font-size: 1rem;
+}
