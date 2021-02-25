@@ -1,16 +1,23 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home'
+import NotFound from './components/NotFound';
+import Day from './components/Day';
 import './App.css';
-import Header from './components/Header'
-import Card from './components/Card'
-import Weeks from './components/Weeks'
 
-function App() {
+
+const App = () => {
   return (
-   <div>
-     <Header />
-     <Card />
-     <Weeks />
-   </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/weather/:day' component={Day} />
+          <Route path='*' component={NotFound} />
+        </Switch>
+      </div>
+   </Router>
   );
 }
 
-export default App;
+export default App

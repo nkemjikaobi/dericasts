@@ -39,6 +39,21 @@ body{
   padding: 20px;
   margin: 10px;
 }
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #047aed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+}
+.lead {
+  font-size: 20px;
+}
 img {
   width: 100%;
 }
@@ -84,8 +99,24 @@ h3{
 .grid-4 {
   grid-template-columns: repeat(4,1fr);
 }
+.grid-1{
+  grid-template-columns: 1fr;
+}
 .weeks {
   margin: 6rem auto;
+}
+.notfound{
+  width: 500px;
+  margin:0 auto;
+}
+.notfound p {
+  margin-bottom: 40px;
+}
+.notfound img {
+  width: 80%;
+}
+.text-center{
+  text-align: center;
 }
 
 
@@ -101,4 +132,15 @@ h3{
     width: 100%;
     margin: 0 auto;
   }
+  .notfound{
+    width: 90%;
+    margin: auto auto;
+  }
+  .notfound p , a{
+    font-size: 2rem;
+  }
+  .notfound img {
+    width: 100%;
+  }
+  
  }
