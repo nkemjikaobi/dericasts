@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from './Header';
-import Card from './Card'
-import Weeks from './Weeks'
+import Search from './Search'
+import City from './City'
 
 const Home = () => {
     return (
         <div>
             <Header />
-            <Card />
-            <Weeks />
+            <Search />
+            <City />
         </div>
     )
 }

@@ -69,42 +69,64 @@ h3{
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 #header {
   height: 150px;
 }
-.card-bg{
-  width: 500px;
-  margin: auto;
+.search {
+  width: 50%;
+  position: relative;
+  display: flex;
+  margin:auto auto;
 }
-.card-bg .flex {
-  flex-direction: column;
+
+.searchTerm {
+  width: 80%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 60px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
 }
-.card-bg .flex .card-item{
-  align-self: flex-start;
+
+.searchTerm:focus{
+  color: #00B4CC;
 }
-.card-bg .flex > *:first-child {
-  color: gray;
-  font-size: 1rem;
+
+.searchButton {
+  width: 40px;
+  height: 60px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
-.card-bg .flex > *:nth-child(2) {
-  color: rgb(201, 200, 200);
+
+.temp {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px auto;
+  width: 30%;
+  height: 120px;
+}
+.temp p {
+  font-size: 4rem;
   font-weight: bold;
 }
 
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid-4 {
-  grid-template-columns: repeat(4,1fr);
-}
 .grid-1{
   grid-template-columns: 1fr;
 }
-.weeks {
-  margin: 6rem auto;
-}
+
 .notfound{
   width: 500px;
   margin:0 auto;
@@ -119,9 +141,8 @@ h3{
   text-align: center;
 }
 
-
- /* Mobile */
- @media(max-width: 500px){
+ /* Mobile and Tablets */
+ @media(max-width: 773px){
   .grid {
     grid-template-columns: 1fr;
   }
@@ -142,5 +163,39 @@ h3{
   .notfound img {
     width: 100%;
   }
+  .search {
+    width: 80%;
+  }
   
+  .searchTerm {
+    width: 100%;
+    height: 60px;
+  }
+  
+  .searchButton {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .temp {
+    padding: 20px;
+    margin: 10px auto;
+    width: 60%;
+    height: 140px;
+  }
+  .temp p {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
  }
+
+ /* Mobile and Tablets */
+ @media(max-width: 773px){
+  
+  .temp {
+    width: 100%;
+  }
+
+ }
+
+
