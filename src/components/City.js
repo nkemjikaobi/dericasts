@@ -18,12 +18,18 @@ const City = () => {
                 <div className='container'>
                     <h3>{city.name}, {city.sys.country}</h3>
                     <div className='temp flex'>
-                        <p>{Math.round(city.main.temp)} &#176; c</p>
+                        <p>{Math.round(city.main.temp - 273.15)} &#176; c</p>
                     </div>
                     <div className='text-center'style={clouds}>{city.weather[0].main}</div>
                 </div>
             </div>
-         ) : ('')
+         ) : (
+         <div className='city city-default'>
+             <div className='container'>
+                 <p>Enter a city and get its current weather...</p>
+             </div>
+         </div>
+         )
        
     )
         }

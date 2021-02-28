@@ -1,6 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
 
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -39,6 +46,13 @@ body{
   padding: 20px;
   margin: 10px;
 }
+.alert {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -48,6 +62,40 @@ body{
   border: none;
   border-radius: 5px;
 }
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+.alert-box {
+  width: 50%;
+  margin: 15px auto;
+}
+
 a{
   text-decoration: none;
 }
@@ -140,6 +188,9 @@ h3{
 .text-center{
   text-align: center;
 }
+.city-default {
+  margin-top: 30px;
+}
 
  /* Mobile and Tablets */
  @media(max-width: 773px){
@@ -194,6 +245,9 @@ h3{
   
   .temp {
     width: 100%;
+  }
+  .alert-box{
+    width: 80%;
   }
 
  }

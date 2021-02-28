@@ -1,11 +1,14 @@
 import React, { useContext, useState } from 'react'
 import weatherContext from '../context/weather/weatherContext'
+import AlertContext from '../context/alert/alertContext'
 
 const Search = () => {
 
     const WeatherContext = useContext(weatherContext);
+    const alertContext = useContext(AlertContext);
 
-    const { searchCity } = WeatherContext;
+    const { searchCity, error } = WeatherContext;
+    const { setAlert } = alertContext;
     
     const [city, setCity] = useState('');
 
@@ -13,8 +16,19 @@ const Search = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        searchCity(city)
-        setCity('');
+        // if(error !== null){
+        //     //setAlert(error.response.data.message,'danger')
+        //     //console.log(error.response.data.message)
+            
+        //     setAlert('City not found', 'light')       
+        // }
+        if(city === ''){
+            setAlert('Please enter a city', 'light')
+        }
+        else{
+            searchCity(city)
+            setCity('');
+        }
     }
     return (
         <div className="container">
