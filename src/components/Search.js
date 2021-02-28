@@ -7,7 +7,7 @@ const Search = () => {
     const WeatherContext = useContext(weatherContext);
     const alertContext = useContext(AlertContext);
 
-    const { searchCity, error } = WeatherContext;
+    const { searchCity} = WeatherContext;
     const { setAlert } = alertContext;
     
     const [city, setCity] = useState('');

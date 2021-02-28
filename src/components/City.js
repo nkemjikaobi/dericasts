@@ -25,7 +25,7 @@ const City = () => {
             </div>
          ) : (
          <div className='city city-default'>
-             <div className='container'>
+             <div className='container text-center'>
                  <p>Enter a city and get its current weather...</p>
              </div>
          </div>
