@@ -26,12 +26,12 @@ const Search = () => {
     }
     return (
         <div className="container">
-            <div className="search" onSubmit={onSubmit}>
+            <form className="search" onSubmit={onSubmit}>
                 <input type="text" className="searchTerm" name='city' value={city} onChange={onChange} placeholder="Enter a city..." />
-                <button type="submit" className="searchButton" onClick={onSubmit}>
+                <button type="submit" className="searchButton">
                     <i className="fa fa-search"></i>
                 </button>
-            </div>
+            </form>
         </div>
     )
 }
