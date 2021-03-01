@@ -25,6 +25,7 @@ const Home = () => {
     //Check if city object is empty
     if (!city.main){
         document.body.style.backgroundImage = (`url(/images/Drizzle.jpg)`)
+        document.body.style.backgroundPosition = 'center right'
     }
     else{
         //Check if the weather is of description 'ATMOSPHERE'
@@ -36,9 +37,11 @@ const Home = () => {
             )
         {
             document.body.style.backgroundImage = (`url(/images/Haze.jpg)`)
+            document.body.style.backgroundPosition = 'center right'
         }
         else{
             document.body.style.backgroundImage = (`url(/images/${city.weather[0].main}.jpg)`)
+            document.body.style.backgroundPosition = 'center right'
         }
     }
     return (
