@@ -20,7 +20,8 @@ const weatherReducer = (state, action) => {
         case SET_ERROR:
             return {
                 ...state,
-                error: action.payload
+                error: action.payload,
+                loading: false
             }
         default:
             return state;

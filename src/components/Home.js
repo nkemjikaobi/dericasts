@@ -1,14 +1,26 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Header from './Header';
 import Alert from './Alert';
 import Search from './Search'
 import City from './City'
 import weatherContext from '../context/weather/weatherContext';
+import AlertContext from '../context/alert/alertContext'
 
 const Home = () => {
 
     const WeatherContext = useContext(weatherContext);
-    const { city } = WeatherContext;
+    const alertContext = useContext(AlertContext);
+    const { city, error } = WeatherContext;
+    const { setAlert } = alertContext;
+
+    //Check if error is set
+    useEffect(() => {
+        if (Object.keys(error).length !== 0){
+            setAlert(error.response.data.message, 'light')
+            
+        }
+        //eslint-disable-next-line
+    }, [error])
 
     //Check if city object is empty
     if (!city.main){

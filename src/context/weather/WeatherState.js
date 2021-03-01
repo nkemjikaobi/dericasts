@@ -10,10 +10,9 @@ import{
 
 const WeatherState = props => {
     const initialState = {
-        weather: {},
         city: {},
         loading: false,
-        error: null
+        error: {}
     }
 
     const [ state, dispatch ] = useReducer(weatherReducer, initialState);

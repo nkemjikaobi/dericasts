@@ -16,18 +16,12 @@ const Search = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        // if(error !== null){
-        //     //setAlert(error.response.data.message,'danger')
-        //     //console.log(error.response.data.message)
-            
-        //     setAlert('City not found', 'light')       
-        // }
         if(city === ''){
             setAlert('Please enter a city', 'light')
         }
         else{
             searchCity(city)
-            setCity('');
+            setCity('')
         }
     }
     return (
