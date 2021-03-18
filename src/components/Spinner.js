@@ -1,8 +1,8 @@
 import React ,{ Fragment } from 'react'
-import spinner from './spinner.gif';
+import darkspinner from './darkspinner-unscreen.gif';
 
 const Spinner = () => <Fragment>
-            <img src={spinner} alt='Loading...' style={{ width: '200px', margin: 'auto', display: 'block' }}/>
+            <img src={darkspinner} alt='Loading...' style={{ width: '200px', margin: 'auto', display: 'block'}}/>
         </Fragment>
 
 
