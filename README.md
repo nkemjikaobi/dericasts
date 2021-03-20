@@ -1,8 +1,8 @@
 LIVE URL => https://dericasts.netlify.app/ 
 
+LIVE URL => https://dericasts.herokuapp.com/
 
 
-            https://dericasts.herokuapp.com/
 
 <h1>Dericasts</h1>
 <p>This is a project for users to get the weather condition of any city in the world</p>
