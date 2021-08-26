@@ -9,9 +9,6 @@ DOCKERIZED LIVE URL => https://dericasts.herokuapp.com/
 <p>This was implemented using the <a href='https://openweathermap.org'>OPEN WEATHER API</a></p>
 <p>Background changes based on weather condition </p>
 
-A Contact Keeper built with REACT 
-<p>CONTEXT API is used for STATE MANAGEMENT across COMPONENTS</p>
-
 <h1>Clone The Repository</h1>
 <code><pre>git clone https://github.com/nkemjikaobi/dericasts.git</pre></code>
 
