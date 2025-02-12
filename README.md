@@ -1,6 +1,5 @@
 LIVE URL => https://dericasts.netlify.app/ 
 
-DOCKERIZED LIVE URL => https://dericasts.herokuapp.com/
 
 <h2>A DOCKERIZED WEATHER APP</h2>
 
